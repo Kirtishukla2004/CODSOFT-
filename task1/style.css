@@ -1,42 +1,30 @@
+/* Reset default padding and margin */
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
+
 body {
   background-color: #f2f1ec;
   font-family: "Open Sans", sans-serif;
   font-weight: 550;
 }
+
+/* Main container */
 .main {
-  margin: 15% 0% 0% 40%;
+  margin: 15% 0 0 40%;
   justify-content: space-between;
 }
+
 span {
   font-size: 15px;
   color: #1d4355;
-}
-input {
-  border: none;
-  border-radius: 8%;
-  background-color: #365b6d;
-  width: 160px;
-  height: 30px;
-  text-transform: capitalize;
-  color:#f7f7f7 ;
-  padding-left: 1%;
-}
-input::placeholder {
-  color: #f7f7f7;
-  padding: 10%;
-}
-.password {
-  margin-top: 3%;
 }
 .username-text {
   padding-bottom: 100px;
 }
 button {
-  background: linear-gradient(to top, #289dd2, #53786d, #289dd2, #41c1ba);
+  background: linear-gradient(to bottom, #289dd2, #53786d, #289dd2, #41c1ba);
   border: none;
   margin-left: 100px;
   height: 30px;
@@ -46,7 +34,38 @@ button {
   border-bottom: #1d4355 solid 2px;
   color: #092330;
   font-weight: 700;
+  cursor: pointer;
 }
-.signup-button{
-    margin-left: 0px;
+.signup-button {
+  margin-left: 0;
+}
+
+input {
+  border: none;
+  border-radius: 8%;
+  background-color: #365b6d;
+  width: 160px;
+  height: 30px;
+  text-transform: capitalize;
+  color: #f7f7f7;
+  padding-left: 1%;
+}
+input::placeholder {
+  color: #f7f7f7;
+  padding: 10%;
+}
+
+.passwordlist {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 10px;
+  color: #092330;
+}
+li {
+  padding-top: 1%;
+  margin-left: 5%;
 }

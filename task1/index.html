@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sign up page</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to external CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-
   <body>
     <div class="main">
       <div class="inputs">
@@ -18,34 +24,32 @@
           type="email"
           name="mail-id"
           class="enter-mail"
-          placeholder="enter your mail id"
+          placeholder="Enter your mail id"
           required
         />
-        <br>
-        <br>
+        <br /><br />
         <span class="password">Password</span>
-       
         <input
           type="password"
           name="password"
           class="enter-password"
-          placeholder="enter password"
+          placeholder="Enter password"
           required
-        /> <i class="fa-solid fa-eye"></i>
-        <i class="fa-regular fa-eye-slash"></i>
-        <p class="password_warning"></p>
+        />
+        <ul class="passwordlist" id="passwordList">
+          <li>Password must be at least 8 characters long.</li>
+          <li>Password must contain at least one uppercase letter.</li>
+          <li>Password must contain at least one lowercase letter.</li>
+          <li>Password must contain at least one digit.</li>
+        </ul>
+        <p class="error_password"></p>
       </div>
-      <button class="login-button" onclick="
-      checkpassword();">LOGIN</button>
+      <button class="login-button" onclick="checkpassword();">LOGIN</button>
       <div class="create-user">
         <span class="create-text">Create a New Account</span>
         <button class="signup-button">SIGN UP</button>
       </div>
     </div>
-
     <script src="script.js"></script>
-    
-
-
   </body>
 </html>

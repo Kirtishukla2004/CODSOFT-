@@ -18,6 +18,7 @@ const message = document.querySelector(".error_password");
 
 password.addEventListener("input", function (event) {
   event.preventDefault(); //
+  message.style.color = "red";
   const passwordValue = password.value;
   if (passwordValue.length < 8) {
     message.textContent = "Password must be at least 8 characters long.";

@@ -43,7 +43,7 @@ repasswordInput.addEventListener("input", function (event) {
   const repasswordValue = repasswordInput.value;
 
   if (passwordValue === repasswordValue) {
-    (" ");
+    passwordMatchMessage.textContent = "";
   } else {
     passwordMatchMessage.textContent =
       "Password doesn't match. Please re-enter.";

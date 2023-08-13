@@ -46,3 +46,22 @@ button {
   margin-left: 40px;
   width: 200px;
 }
+.passwordlist {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 12px;
+  color: #092330;
+}
+ul {
+  margin: 30px 50px 0px 500px;
+}
+a {
+  color: #092330;
+}
+a:hover {
+  color: aliceblue;
+}

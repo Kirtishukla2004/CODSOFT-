@@ -77,6 +77,13 @@
           class="password"
           placeholder="enter passowrd"
         />
+        <ul class="passwordlist" id="passwordList">
+          <li>Password must be at least 8 characters long.</li>
+          <li>Password must contain at least one uppercase letter.</li>
+          <li>Password must contain at least one lowercase letter.</li>
+          <li>Password must contain at least one digit.</li>
+        </ul>
+        <p class="error_password"></p>
       </p>
       <p>
         ENTER PASSWORD AGAIN
@@ -87,11 +94,14 @@
           class="repassword"
           placeholder="re-enter passowrd"
         />
-      </p>
+        </p>
+        <p class="message"></p>
+       
       <div class="buttons">
         <button type="submit" class="signup_button">SIGN UP</button><br />
-        <button class="backtologin">BACK TO LOGIN</button>
+        <button class="backtologin" ><a href="index.html">BACK TO LOGIN </a></button>
       </div>
     </div>
+    <script src="signup.js"></script>
   </body>
 </html>
